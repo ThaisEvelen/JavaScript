@@ -16,3 +16,6 @@ console.log(meuPrimeiroNome);
 
 const constComValor = 'da silva';
 console.log(constComValor);
+
+const constSemValor = '';
+console.log(constSemValor);
