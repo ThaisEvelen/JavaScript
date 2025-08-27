@@ -2,7 +2,10 @@ const meusDados = {
     nome: 'Thais',
     sobrenome: 'Pinto',
     moraNoBrasil: true,
-    idade: 33
+    idade: 33,
+    pegaDocumento: () => {
+        console.log('CPF:12345678900');
+    }
 };
 
 
@@ -27,7 +30,18 @@ console.log(objetoPossuiValor(false));
 
 function objetoPossuiChave(nomeDaChave) {
     const valoresDoObjeto = Object.keys(meusDados);
-    console.log(objetoPossuiChave());
-    //return valoresDoObjeto.includes(valorDaChave);
+    return valoresDoObjeto.includes(nomeDaChave);
 }
-objetoPossuiChave();
+console.log(objetoPossuiChave('nome'));
+console.log(objetoPossuiChave('sobrenome'));
+console.log(objetoPossuiChave('moraNoBrasil'));
+console.log(objetoPossuiChave('idade'));
+console.log('-------------------------------')
+
+console.log(objetoPossuiChave('Nome'));
+console.log(objetoPossuiChave('Sobrenome'));
+console.log(objetoPossuiChave('MoraNoBrasil'));
+console.log(objetoPossuiChave('carro'));
+
+meusDados.pegaDocumento();
+console.log();
