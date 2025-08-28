@@ -73,3 +73,12 @@ const listarLivros = () => {
 }
 
 listarLivros();
+
+const executaEMostraLista = (acao, mostraLista) => {
+    console.log('Vou executar')
+    acao();
+     console.log('executei')
+    mostraLista();
+}
+
+executaEMostraLista(() => adicionaLivro(3437, 'Codigo Limpo', 'Tio Bob', 18),() => listarLivros());
