@@ -1,4 +1,5 @@
 const botao = document.getElementById('meu-botao');
+const inputText = document.getElementById('texto')
 const innerText = document.getElementById('texto');
 const alertaOla = () => console.log('Olá,estudante!');
 
