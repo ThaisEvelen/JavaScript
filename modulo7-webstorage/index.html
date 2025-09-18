@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores</title>
+</head>
+ <style>
+    #texto, #meu-botao, #esquecer {
+            height: 54px;
+            border-radius: 4px;
+            background-color: #fffefa;
+            width: 250px;
+             font-size: 24px;
+        }
+        #esquecer {
+            background-color: aquamarine;
+            font-size: 24px;
+            cursor: pointer;
+        }
+    #meu-botao{
+        background-color: #fd0206;
+            color: #fff;
+            font-size: 24px;
+            cursor: pointer;
+    }
+    body{
+         font-size: 24px;
+         font-family: Verdana, Geneva, Tahoma, sans-serif;
+         
+    }
+ </style>
+<body>
+    <h1>Lista de pessoas que clicaram no botão</h1>
+    <p>Nomes</p>
+    <p id="lista-nomes"></p>
+    <input type="text" id="texto" placeholder="Digite seu nome">
+    <button id="meu-botao">Clique aqui para curtir</button>
+    <button id="esquecer">Limpar</button>
+    <script src="./index.js"></script>
+</body>
+</html>

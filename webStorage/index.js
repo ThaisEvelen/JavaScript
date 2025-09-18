@@ -33,7 +33,7 @@ for(let fruta = 0; fruta < frutas.length; fruta++){
 }
 
 for(let fruta = 0; fruta < frutas.length; fruta++){
-    
+    sessionStorage.setItem(`Fruta ${parseInt(fruta)}`,frutas[fruta])
     console.log(sessionStorage.getItem(`'Fruta ${parseInt(fruta)}`))
 }
 
