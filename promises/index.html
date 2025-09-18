@@ -4,48 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Promises</title>
+    <title>Seletores de Elemento</title>
 
     <style>
         .titulo {
             font-family: Verdana, Geneva, Tahoma, sans-serif;
             color: #fb32cc;
         }
-
         .alterado-cor-bg {
-            background-color: #fd0206;
+            background-color:#fd0206 ;
             color: #fffefa
         }
-
-        #texto,
-        #meu-botao,
-        #esquecer {
+        #texto, #meu-botao,#esquecer {
             height: 54px;
             border-radius: 4px;
             background-color: #fffefa;
             width: 250px;
             font-size: 24px;
         }
-
         #esquecer {
             background-color: #c30000;
         }
-
         #meu-botao {
             background-color: #056aff;
             color: #fff;
             font-size: 24px;
             cursor: pointer;
         }
+    
     </style>
 </head>
 
 <body>
-    <h1>Promises</h1>
+   <h1>localStorage e sessionStorage</h1>
     <main>
         <section id="secao-principal">
-            <button id="meu-botao" name="meu-botao">Aceitar</button>
-            <button id="esquecer">Recusar</button>
+            <input type="text" id="texto" placeholder="Digite seu nome">
+            <button id="meu-botao" name="meu-botao" >Lembrar de você</button>
+             <button id="esquecer" >Esquecer de tudo</button>
         </section>
     </main>
     <script src="./index.js"></script>
