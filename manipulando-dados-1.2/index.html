@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f5f5f5;
+        padding: 20px;
+    }
+
+    #nova-tarefa {
+        padding: 10px;
+        width: 250px;
+        border: 2px solid #4CAF50;
+        border-radius: 6px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    #nova-tarefa:focus {
+        border-color: #45a049;
+        box-shadow: 0 0 5px rgba(76, 175, 80, 0.6);
+    }
+
+    #adicionar {
+        padding: 10px 15px;
+        margin-left: 8px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-weight: bold;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    #adicionar:hover {
+        background-color: #45a049;
+    }
+</style>
+
+<body>
+    <input type="text" id="nova-tarefa" placeholder="Digite a tarefa">
+    <button id="adicionar">Adicionar</button>
+
+    <ul id="lista-tarefas"></ul>
+
+</body>
+<script src="./index.js"></script>
+</html>
