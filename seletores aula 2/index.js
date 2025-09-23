@@ -42,7 +42,7 @@ const listaDeElementos = ['header', 'ul', 'meu-botao', 'titulo-principal', 'elem
 
 const descobreTipoDoElemento = (lista) => {
     if (listaDeElementos.length === 0) {
-        console.log('Voc~e não passou uma lista de elementos')
+        console.log('Você não passou uma lista de elementos')
     } else {
         for (let nome of lista) {
             if (verificaSeExisteTag(nome)) {
@@ -53,7 +53,7 @@ const descobreTipoDoElemento = (lista) => {
             }
             else if (verificaSeExisteClasse(nome)) {
                 console.log(`${nome} é uma classe`)
-            } else if (verificaSeExisteName(npme)) {
+            } else if (verificaSeExisteName(nome)) {
                 console.log(`${nome} é um nome`)
             } else {
                 console.log(`${nome} não está no DOM`)
