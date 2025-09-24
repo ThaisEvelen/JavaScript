@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mini Twitter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f2f2f2;
+        }
+
+        #form-post {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: white;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            z-index: 10;
+        }
+
+        #form-post input,
+        #form-post textarea {
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 14px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        #form-post button {
+            padding: 8px 12px;
+            background: #1da1f2;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: flex-end;
+        }
+
+        #form-post button:hover {
+            background: #0d8ddb;
+        }
+
+        #feed {
+            margin-top: 160px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .post {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .username {
+            font-weight: bold;
+        }
+
+        .cat-img {
+            max-width: 100%;
+            margin-top: 10px;
+            border-radius: 8px;
+        }
+
+        .like-btn {
+            margin-top: 10px;
+            background: #e0245e;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .like-btn:hover {
+            background: #c81e4d;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form id="form-post">
+        <input type="text" id="username" placeholder="Digite seu nome" required>
+        <textarea id="post-text" placeholder="O que está acontecendo?" rows="2" required></textarea>
+        <button type="submit">Postar</button>
+    </form>
+
+    <div id="feed"></div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
